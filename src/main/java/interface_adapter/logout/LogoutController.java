@@ -23,6 +23,6 @@ public class LogoutController {
         // 1. instantiate the `LogoutInputData`, which should contain the username.
         final LogoutInputData requestModel = new LogoutInputData(username);
         // 2. tell the Interactor to execute.
-        logoutUseCaseInteractor.logout(requestModel);
+        logoutUseCaseInteractor.execute(requestModel);
     }
 }
